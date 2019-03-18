@@ -1,0 +1,11 @@
+load('-ascii', "newRkData.txt");
+load('-ascii', "newRkDataLCDM.txt");
+x = newRkData(:, 1);
+y1 = newRkData(:, 2);
+y2 = newRkDataLCDM(:, 2);
+%y1init = y1(end);
+%y2init = y2(end);
+%y1 = y1./y1init;
+%y2 = y2./y2init;
+y = y1./y2;
+plot(x, y);
